@@ -16,11 +16,11 @@ class PhysiciansIndex extends React.Component{
   render(){
     const { physicians } = this.props;
     const physicianInfo = physicians.map( physician => {
-      return <NavLink to={`/physicians/${physician.id}`} key={physician.id}>{physician.lName} {physician.fName}</NavLink>
+      return <NavLink className="physicians" activeClassName="selected" to={`/physicians/${physician.id}`} key={physician.id}>{physician.lName} {physician.fName}</NavLink>
     });
 
     return(
-      <div>
+      <div className="main">
         <div className="physicians-index">
           <p>PHYSICIANS</p>
           {physicianInfo}

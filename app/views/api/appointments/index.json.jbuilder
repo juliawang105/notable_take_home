@@ -1,3 +1,4 @@
+
 json.physician do 
   json.extract! @physician, :id, :f_name, :l_name, :email 
 end

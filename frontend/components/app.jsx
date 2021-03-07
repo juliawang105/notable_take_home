@@ -4,7 +4,7 @@ import PhysiciansIndexContainer from './physiciansIndex'
 
 const App = (props) => (
   <>
-  <Route path="/" component={PhysiciansIndexContainer} />
+    <Route path="/" component={PhysiciansIndexContainer} />  
   </>
 )
 

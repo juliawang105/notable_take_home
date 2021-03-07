@@ -12,7 +12,7 @@ Appointment.destroy_all
 #Physicians 
 hibbert = Physician.create!({f_name: 'Julius', l_name: 'Hibbert', email: 'hibbert@notablehealth.com'})
 krieger = Physician.create!({f_name: 'Algemop', l_name: 'Krieger', email: 'krieger@notablehealth.com'})
-riviera = Physician.create!({f_name: 'Nick', l_name: 'riviera', email: 'riviera@notablehealth.com'})
+riviera = Physician.create!({f_name: 'Nick', l_name: 'Riviera', email: 'riviera@notablehealth.com'})
 
 #Patients 
 archer = Patient.create!({f_name: 'Sterling', l_name: 'Archer'})
@@ -26,5 +26,4 @@ Appointment.create({patient_id: archer.id, physician_id: krieger.id, time: Time.
 Appointment.create({patient_id: figis.id, physician_id: krieger.id, time: Time.now + 3000, kind: 'Follow-up'})
 Appointment.create({patient_id: gilette.id, physician_id: krieger.id, time: Time.now + 6000, kind: 'Follow-up'})
 Appointment.create({patient_id: kane.id, physician_id: krieger.id, time: Time.now + 9000, kind: 'New Patient'})
-Appointment.create({patient_id: archer.id, physician_id: krieger.id, time: Time.now + 12000, kind: 'New Patient'})
 Appointment.create({patient_id: poovey.id, physician_id: krieger.id, time: Time.now + 15000, kind: 'New Patient'})

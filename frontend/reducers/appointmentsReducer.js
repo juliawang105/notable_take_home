@@ -7,7 +7,8 @@ export const appointmentsReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_PHYSICIAN_APPTS:
-      if(!action.payload.appointments) return state;
+      // debugger
+      if(!action.payload.appointments) return {};
       return action.payload.appointments
     default:
       return state;
