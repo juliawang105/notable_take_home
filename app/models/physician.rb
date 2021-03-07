@@ -10,4 +10,13 @@
 #  updated_at :datetime         not null
 #
 class Physician < ApplicationRecord
+  validates :f_name, :l_name, :email, presence: true 
+
+  has_many :appointments,
+    foreign_key: :physician_id,
+    class_name: :Appointment
+
+  has_many :patients,
+    through: :appointments,
+    source: :patient 
 end
