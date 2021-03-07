@@ -1,8 +1,10 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+import PhysiciansIndexContainer from './physiciansIndex'
 
 const App = (props) => (
   <>
-    This is the app!
+  <Route path="/" component={PhysiciansIndexContainer} />
   </>
 )
 
